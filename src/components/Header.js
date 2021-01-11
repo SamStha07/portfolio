@@ -83,6 +83,7 @@ const Nav = styled.nav`
   /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .nav-links {
     display: flex;
@@ -104,21 +105,20 @@ const Nav = styled.nav`
   }
 
   @media (max-width: 768px) {
+    height: 8vh;
     position: fixed;
     background: #5b78c7;
     z-index: 2;
 
     .hamburger {
-      position: fixed;
+      position: absolute;
       cursor: pointer;
       right: 5%;
-      top: 15px;
-      transform: translate(5px, 0px);
       z-index: 2;
     }
 
     .nav-links {
-      margin-top: 2rem;
+      padding-top: 2rem;
       position: fixed;
       background: #5b78c7;
       height: 100vh;
@@ -137,7 +137,7 @@ const Nav = styled.nav`
     }
 
     .nav-links li {
-      padding: 50px;
+      padding: 40px;
       justify-content: center;
       font-size: 24px;
     }
