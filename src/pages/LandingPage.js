@@ -25,6 +25,7 @@ const LandingPage = ({ id }) => {
             <a
               href={'https://github.com/SamStha07?tab=repositories'}
               target='_blank'
+              rel='noopener noreferrer'
             >
               <i className='fab fa-github'></i>
             </a>
@@ -33,6 +34,7 @@ const LandingPage = ({ id }) => {
             <a
               href={'https://www.linkedin.com/in/sam-shrestha-4798241aa/'}
               target='_blank'
+              rel='noopener noreferrer'
             >
               <i className='fab fa-linkedin'></i>
             </a>
