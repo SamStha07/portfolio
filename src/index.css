@@ -10,6 +10,11 @@ body {
   font-family: 'Redressed', cursive !important;
   line-height: 1.5;
   letter-spacing: 0.1em;
+  transition: all 1s ease-out;
+
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #1f4037, #1f4037);
+  background: linear-gradient(to left, #1f4037, #99f2c8);
 }
 
 a {
@@ -81,5 +86,30 @@ a {
   }
   100% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+h1 {
+  font-family: serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 16px;
   }
 }

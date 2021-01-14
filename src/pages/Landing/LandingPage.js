@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import mainImg from '../images/paper.jpg';
+import { Wrapper, Name, Intro, Button } from './LandingElement';
 import { gsap } from 'gsap';
+import { Link } from 'react-scroll';
 
 const LandingPage = ({ id }) => {
   useEffect(() => {
@@ -9,8 +9,9 @@ const LandingPage = ({ id }) => {
     t1.to('.orbit-spinner', { y: '0%', duration: 3 }); // stagger pops after 0.25
     t1.to('.intro', { y: '-100%', duration: 1 }, '-=1'); // -=1 means start 1s faster
     t1.fromTo('.title1', { opacity: 0 }, { opacity: 1, duration: 1 });
-    t1.fromTo('.title2', { opacity: 0 }, { opacity: 1, duration: 1 });
-    t1.fromTo('.icons', { opacity: 0 }, { opacity: 1, duration: 1 });
+    t1.fromTo('.title2', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
+    t1.fromTo('.icons', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
+    t1.fromTo('.btn', { opacity: 0 }, { opacity: 1, duration: 1 }, '-=1');
   }, []);
 
   return (
@@ -40,6 +41,18 @@ const LandingPage = ({ id }) => {
             </a>
           </div>
         </div>
+
+        <Button className='btn'>
+          <Link
+            to='section1'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            Explore <i className='fa fa-arrow-right' aria-hidden='true'></i>
+          </Link>
+        </Button>
       </Name>
       {/* will show in page intro */}
       <Intro className='intro'>
@@ -54,61 +67,3 @@ const LandingPage = ({ id }) => {
 };
 
 export default LandingPage;
-
-const Wrapper = styled.div`
-  background-image: url(${mainImg});
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  .icons {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    cursor: pointer;
-  }
-  .social-link {
-    padding: 0 10px;
-  }
-  .social-link:hover {
-    transform: scale(1.2);
-  }
-`;
-
-const Name = styled.h5`
-  position: absolute;
-  /* absolute means you can move anywhere */
-  top: 40%;
-  left: 50%;
-  color: #807147;
-  font-size: 40px;
-  transform: translate(-50%, -40%);
-  /* -50% on X-Y and -30% on top and bottom */
-  .name {
-    color: palevioletred;
-  }
-
-  /* < 768px */
-  @media (max-width: 768px) {
-    font-size: 30px;
-  }
-`;
-
-const Intro = styled.div`
-  position: fixed;
-  background: black;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;

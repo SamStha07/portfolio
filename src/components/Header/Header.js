@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import { Nav } from './HeaderElement';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-import BurgerMenu from './BurgerMenu';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -34,7 +34,7 @@ const Header = () => {
               to='section1'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={1000}
               onClick={closeMobileMenu}
             >
@@ -74,75 +74,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const Nav = styled.nav`
-  height: 8vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  /* overflow: hidden; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .nav-links {
-    display: flex;
-    list-style: none;
-    height: 100%;
-    margin-right: 2rem;
-  }
-
-  .nav-links li {
-    display: flex;
-    text-decoration: none;
-    font-size: 18px;
-    align-items: center;
-    padding-left: 50px;
-    cursor: pointer;
-  }
-  .nav-links li:hover {
-    color: deeppink;
-  }
-
-  @media (max-width: 768px) {
-    height: 8vh;
-    position: fixed;
-    background: #5b78c7;
-    z-index: 2;
-
-    .hamburger {
-      position: absolute;
-      cursor: pointer;
-      right: 5%;
-      z-index: 2;
-    }
-
-    .nav-links {
-      padding-top: 2rem;
-      position: fixed;
-      background: #5b78c7;
-      height: 100vh;
-      width: 100vw;
-      flex-direction: column;
-
-      clip-path: circle(100px at 100% -10%);
-      -webkit-clip-path: circle(70px at 100% -10%);
-      transition: all 1s ease-out;
-    }
-
-    .nav-links.active {
-      clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
-      transition: all 1s ease-out;
-    }
-
-    .nav-links li {
-      padding: 40px;
-      justify-content: center;
-      font-size: 24px;
-    }
-    .nav-links li:hover {
-      color: bisque;
-    }
-  }
-`;

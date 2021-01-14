@@ -1,8 +1,8 @@
-import LandingPage from './pages/LandingPage';
-import Header from './components/Header';
-import Skill from './pages/SkillPage';
-import Project from './pages/ProjectPage';
-import Contact from './pages/ContactPage';
+import LandingPage from './pages/Landing/LandingPage';
+import Header from './components/Header/Header';
+import Skill from './pages/Skills/SkillPage';
+import Project from './pages/Projects/ProjectPage';
+import Contact from './pages/Contact/ContactPage';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {

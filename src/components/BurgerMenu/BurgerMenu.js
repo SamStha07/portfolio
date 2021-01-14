@@ -18,7 +18,7 @@ const MenuBtn = styled.div`
     div {
       width: 30px;
       height: 3px;
-      background-color: ${({ show }) => (show ? 'white' : 'black')};
+      background-color: black;
       margin: 5px;
 
       transform-origin: 1px;
