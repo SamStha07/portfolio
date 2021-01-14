@@ -77,7 +77,7 @@ const ProjectPage = ({ id }) => {
       <h1>Projects</h1>
       <ProjectList>
         <ProjectName>
-          <img src={typewriter} />
+          <img src={typewriter} alt='name1' />
           <h2>Ecommerce</h2>
           <ProjectLink>
             <p className='left'>View my project</p>
@@ -85,7 +85,7 @@ const ProjectPage = ({ id }) => {
           </ProjectLink>
         </ProjectName>
         <ProjectName>
-          <img src={typewriter} />
+          <img src={typewriter} alt='name2' />
           <h2>Ecommerce</h2>
           <ProjectLink>
             <p className='left'>View my project</p>
@@ -93,7 +93,7 @@ const ProjectPage = ({ id }) => {
           </ProjectLink>
         </ProjectName>
         <ProjectName>
-          <img src={typewriter} />
+          <img src={typewriter} alt='name3' />
           <h2>Ecommerce</h2>
           <ProjectLink>
             <p className='left'>View my project</p>
