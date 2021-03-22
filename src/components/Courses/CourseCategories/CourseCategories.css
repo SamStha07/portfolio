@@ -1,0 +1,78 @@
+.courseCategories {
+  padding: 80px 100px 0 100px;
+  /* background: green; */
+}
+
+.courseCategories__heading {
+  height: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.courseCategories__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.courseCategories__description p {
+  width: 780px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #7a7a7a;
+}
+
+.courseCategories__description button {
+  width: 103px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #92d7c0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #151522;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.courseCategories__moreIcon {
+  margin-left: 16px;
+}
+
+.courseCategories__tabTitle {
+  height: 100px;
+}
+
+/* tab styling */
+.tab-link {
+  font-family: "Open Sans";
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+  background: white;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #919191;
+  padding-bottom: 13px;
+  padding-right: 48px;
+  cursor: pointer;
+}
+
+.tab-link-active {
+  color: #4bbd97;
+  border-bottom: 2px solid #4bbd97;
+}
+
+.courseCategories__tabContent {
+  height: 500px;
+}

@@ -1,0 +1,24 @@
+.login__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: hsl(0, 0%, 7%);
+  opacity: 0.8;
+  z-index: 998;
+  cursor: pointer;
+}
+
+.login__box {
+  position: absolute;
+  width: 790px;
+  height: 417px;
+  left: 325px;
+  top: 176px;
+  background: #ffffff;
+  opacity: 1!important;
+  box-shadow: 0px 16px 16px rgba(50, 50, 71, 0.08),
+    0px 24px 32px rgba(50, 50, 71, 0.08);
+  border-radius: 10px;
+  z-index: 999;
+
+}

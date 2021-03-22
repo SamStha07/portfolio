@@ -1,0 +1,122 @@
+.featuredCourse {
+  position: relative;
+  min-height: 628px;
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 10;
+}
+
+.featuredCourse__background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /* z-index: 1; */
+}
+
+.featuredCourse__info {
+  margin-top: 173px;
+  height: 80px;
+  width: 466px;
+  z-index: 2;
+}
+
+.featuredCourse__title {
+  font-size: 30px;
+  width: 466px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.featuredCourse__description {
+  height: 50px;
+  width: 354px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.featuredCourse__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.featuredCourse__joinBtn {
+  height: 62px;
+  width: 169px;
+  border-radius: 6px;
+  padding: 19px, 44px, 19px, 44px;
+  background: linear-gradient(90deg, #0fa6ac 0%, #4bbd97 100%);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  color: #ebf6f3;
+  margin-right: 30px;
+}
+
+/* .featuredCourse__joinBtn:focus,
+.featuredCourse__joinBtn:hover,
+.featuredCourse__joinBtn:active {
+  border: none;
+} */
+
+.featuredCourse__demoBtn {
+  display: flex;
+  align-items: center;
+}
+
+.featuredCourse__demoText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  height: 22px;
+  width: 101px;
+  margin-left: 12px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.featuredCourse__banner {
+  position: relative;
+  z-index: 2;
+  margin-top: 59px;
+  width: 873px;
+  height: 491px;
+  margin-bottom: 79px;
+}
+
+.featuredCourse__mainImage {
+  width: 100%;
+}
+
+.featuredCourse__videoPlayIcon {
+  position: absolute;
+  z-index: 5;
+  top: 46%;
+  left: 54%;
+}
+
+.featuredCourse__dots {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 50%;
+}
+
+.featuredCourse__activeDot {
+  margin: 0 10px;
+}
